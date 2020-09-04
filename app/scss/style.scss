@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    font-size: 16px;
+}
+
+.test {
+    font-size: 18px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    text-align: center;
+    a {
+        list-style: none;
+        color: red;
+        text-decoration: none;
+        font-size: 24px;
+    }
+}
+
+.main {
+    background-color: rgba(#000, .1);
+    display: flex;
+    justify-content: space-around;
+    .block {
+        width: 30%;
+        padding: 5px 20px;
+        margin-bottom: 20px;
+        h3 {
+            font-size: 24px;
+            color: brown;
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+            color: chocolate;
+            font-style: italic;
+        }
+        a {
+            text-decoration: none;
+            color: indigo;
+            font-size: 32px;
+        }
+        a:hover {
+            color: lime;
+            transition: all .5s;
+        }
+    }
+}
