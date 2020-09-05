@@ -1,17 +1,64 @@
-// .works__inner {}
-// .recent__works {}
-.recent__title {
-    background-image: url(../img/icons/line-bg.jpg);
-    margin-bottom: 22px;
-}
-
-.recent__title-text {
-    font-family: 'Bebas';
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #e8603c;
-    padding-right: 20px;
-    background-color: #fff;
-    // display: inline-block;
-}
+    // .works__inner {}
+    // .recent__works {}
+    .recent__title {
+        background-image: url(../img/icons/line-bg.jpg);
+        margin-bottom: 22px;
+    }
+    
+    .recent__title-text {
+        font-family: 'Bebas';
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #e8603c;
+        padding-right: 20px;
+        background-color: #fff;
+        // display: inline-block;
+    }
+    
+    // .post {}
+    .post__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .post__block {
+        position: relative;
+    }
+    
+    .post__block::before {
+        content: '';
+        position: absolute;
+        border: 1px solid #dbdbdb;
+        border-top: none;
+        width: 220px;
+        height: 76px;
+        z-index: 10;
+        top: 184px;
+    }
+    
+    a.post__block-title {
+        display: block;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 18px;
+        color: #c3c3c3;
+        font-family: 'Bebas';
+        font-weight: normal;
+        letter-spacing: 1px;
+        padding: 13px 0 8px 15px;
+    }
+    
+    a.post__block-date {
+        display: block;
+        font-size: 11px;
+        line-height: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #e8663c;
+        font-family: 'Bebas';
+        font-weight: normal;
+        padding: 0px 0 15px 15px;
+    }

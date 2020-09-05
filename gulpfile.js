@@ -10,7 +10,7 @@ let gulp = require('gulp'),
 
 // обьявление тасков
 gulp.task('sass', function() {
-    return gulp.src('app/scss/style.scss') // исходный файл
+    return gulp.src('app/scss/**/*.scss') // исходный файл
         .pipe(sass({ outputStyle: 'compressed' })) // минификация стилей
         .pipe(rename({ suffix: '.min' }))
         .pipe(autoprefixer({
@@ -50,6 +50,11 @@ gulp.task('html', function() {
         .pipe(browserSync.reload({ stream: true }))
 });
 
+// gulp.task('scss', function() {
+//     return gulp.src('app/*.scss')
+//         .pipe(browserSync.reload({ stream: true }))
+// });
+
 gulp.task('js', function() {
     return gulp.src('app/js/*.js')
         .pipe(browserSync.reload({ stream: true }))
@@ -66,8 +71,9 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('app/scss/style.scss', gulp.parallel('sass'))
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'))
     gulp.watch('app/*.html', gulp.parallel('html'))
+        // gulp.watch('app/*.scss', gulp.parallel('scss'))
     gulp.watch('app/js/*.js', gulp.parallel('js'));
 });
 
