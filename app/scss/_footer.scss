@@ -1,0 +1,122 @@
+// .footer {}
+// .container {}
+.footer__inner {
+    background-color: #e8603c;
+    display: flex;
+}
+
+.about__footer {
+    width: 300px;
+    h5 {
+        font-size: 20px;
+        font-family: 'Bebas';
+        font-weight: normal;
+        color: #fcece7;
+        padding: 40px 0 30px 35px;
+        margin: 0;
+    }
+    p {
+        font-size: 12px;
+        font-family: 'Helvetica Neue Light';
+        font-weight: 300;
+        color: #fff;
+        padding: 0px 0 0px 35px;
+        margin: 0;
+    }
+}
+
+.social__footer {
+    width: 300px;
+    h5 {
+        font-size: 20px;
+        font-family: 'Bebas';
+        font-weight: normal;
+        color: #fcece7;
+        padding: 40px 0 30px 35px;
+        margin: 0;
+    }
+    .twit {
+        padding: 0 0 22px 35px;
+        a {
+            font-size: 12px;
+            font-family: 'Helvetica Neue Light';
+            line-height: 14px;
+            color: #f3b29d;
+            text-decoration: none;
+        }
+        p {
+            font-family: 'Helvetica Neue Light';
+            font-weight: 300;
+            font-size: 12px;
+            color: #fff;
+            margin: 0;
+            padding: 0 0 10px 0px;
+        }
+        span {
+            font-size: 12px;
+            color: #f3b29d;
+            font-family: 'Helvetica Neue Light';
+            padding-bottom: 22px;
+        }
+    }
+}
+
+.follow {
+    padding: 0 0 30px 35px;
+    p {
+        font-family: 'Helvetica Neue Light';
+        font-weight: 300;
+        font-size: 12px;
+        color: #fff;
+        margin: 0;
+        a {
+            font-size: 12px;
+            color: #f3b29d;
+            font-family: 'Helvetica Neue Light';
+        }
+    }
+}
+
+.contacts__footer {
+    width: 300px;
+    h5 {
+        font-size: 20px;
+        font-family: 'Bebas';
+        font-weight: normal;
+        color: #fcece7;
+        padding: 40px 0 30px 35px;
+        margin: 0;
+    }
+    p {
+        font-size: 12px;
+        font-family: 'Helvetica Neue Light';
+        font-weight: 300;
+        color: #fff;
+        padding: 0px 0 18px 35px;
+        margin: 0;
+    }
+    a {
+        font-size: 12px;
+        font-family: 'Helvetica Neue Light';
+        font-weight: 300;
+        color: #fff;
+        text-decoration: none;
+        padding: 0px 0 20px 35px;
+        display: block;
+    }
+    .social__icons {
+        display: flex;
+        padding: 0 0 42px 35px;
+        a+a {
+            margin-left: 5px;
+        }
+        a {
+            margin: 0;
+            padding: 0;
+            display: block;
+            width: 30px;
+            height: 30px;
+            z-index: 5;
+        }
+    }
+}
