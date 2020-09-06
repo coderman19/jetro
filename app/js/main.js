@@ -4,6 +4,7 @@ $(function() {
         asNavfor: '.thumbs',
         slidesToShow: 1,
         slidesToScroll: 1,
+        fade: true
 
     });
     $('.thumbs').slick({
@@ -12,7 +13,8 @@ $(function() {
         slidesToShow: 6,
         slidesToScroll: 6,
         focusOnSelect: true,
-        variableWidth: true
+        centerMode: false
+            // variableWidth: true
 
     });
 });
